@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Guru</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #e9ecef;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        h1, h2, h3 {
+            color: #1a202c;
+        }
+        
+        p {
+            color: #343a40;
+            line-height: 1.6;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .feature {
+            flex: 0 0 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .feature {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Test Guru</h1>
+            <p>Приложение для прохождения тестов</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <h2>О проекте</h2>
+        <p>Test Guru - это веб-приложение, созданное на Ruby on Rails, которое позволяет пользователям проходить различные тесты. Проект разработан как учебный в онлайн-школе Thinknetica.</p>
+        
+        <img src="test-guru-screenshot.jpg" alt="Скриншот приложения">
+        
+        <h2>Ключевые особенности</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Разнообразие тестов</h3>
+                <p>Большой выбор тестов по различным темам и направлениям.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Простая регистрация</h3>
+                <p>Быстрый процесс регистрации и входа в систему.</p>
+            </div>
+            
+            <div class="feature">
+                <h3>Статистика результатов</h3>
+                <p>Отслеживание прогресса и анализ результатов.</p>
+            </div>
+        </div>
+        
+        <h2>Технологии</h2>
+        <p>Приложение разработано с использованием:</p>
+        <ul>
+            <li>Ruby on Rails</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+        </ul>
+        
+        <footer>
+            <p>© 2025 Test Guru</p>
+            <p>Учебный проект онлайн-школы <a href="http://www.thinknetica.com">Thinknetica</a></p>
+        </footer>
+    </div>
+</body>
+</html>
