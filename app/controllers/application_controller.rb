@@ -1,9 +1,11 @@
-class ApplicationController < ActionController::Base
-	def about
-		render "about"
-	end
+# frozen_string_literal: true
 
-	def author
-		render "author"
-	end
+class ApplicationController < ActionController::Base
+  def about
+    render 'about'
+  end
+
+  def author
+    render 'author'
+  end
 end
