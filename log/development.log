@@ -1,0 +1,106 @@
+Started GET "/about" for 127.0.0.1 at 2025-05-29 12:27:33 +0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/about.html within layouts/application
+  Rendered application/about.html within layouts/application (Duration: 1.3ms | Allocations: 387)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 91c1a5292ce71e874942
+Version: webpack 4.47.0
+Time: 306ms
+Built at: 29.05.2025 12:27:35
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e8b7c878b2c80912a96b.js   8.95 KiB  application  [emitted] [immutable]  application
+js/application-e8b7c878b2c80912a96b.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e8b7c878b2c80912a96b.js js/application-e8b7c878b2c80912a96b.js.map
+[./app/javascript/packs/application.js] 5.05 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+Error: Cannot find package '@babel/plugin-proposal-private-methods' imported from /Users/l.tereshchenkova/testguru/babel-virtual-resolve-base.js
+    at __node_internal_ (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:225:9)
+    at new NodeError (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:195:5)
+    at packageResolve (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:899:9)
+    at moduleResolve (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:939:18)
+    at defaultResolve (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:1017:15)
+    at resolve (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/vendor/import-meta-resolve.js:1030:12)
+    at tryImportMetaResolve (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/files/plugins.js:149:45)
+    at resolveStandardizedNameForImport (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/files/plugins.js:174:19)
+    at resolveStandardizedName (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/files/plugins.js:186:22)
+    at loadPlugin (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/files/plugins.js:56:7)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/config-descriptors.js:140:16)
+    at createDescriptor.next (<anonymous>)
+    at step (/Users/l.tereshchenkova/testguru/node_modules/gensync/index.js:261:32)
+    at evaluateAsync (/Users/l.tereshchenkova/testguru/node_modules/gensync/index.js:291:5)
+    at /Users/l.tereshchenkova/testguru/node_modules/gensync/index.js:44:11
+    at Array.forEach (<anonymous>)
+    at Function.async (/Users/l.tereshchenkova/testguru/node_modules/gensync/index.js:43:15)
+    at Function.all (/Users/l.tereshchenkova/testguru/node_modules/gensync/index.js:216:13)
+    at Generator.next (<anonymous>)
+    at createDescriptors (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/config-descriptors.js:102:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/config-descriptors.js:99:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at /Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/gensync-utils/functional.js:39:27
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/config-chain.js:349:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/config-chain.js:316:14)
+    at chainWalker.next (<anonymous>)
+    at loadFileChain (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/config-chain.js:191:24)
+    at loadFileChain.next (<anonymous>)
+    at buildRootChain (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/config-chain.js:77:27)
+    at buildRootChain.next (<anonymous>)
+    at loadPrivatePartialConfig (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/partial.js:72:62)
+    at loadPrivatePartialConfig.next (<anonymous>)
+    at loadPartialConfig (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/partial.js:115:25)
+    at loadPartialConfig.next (<anonymous>)
+    at step (/Users/l.tereshchenkova/testguru/node_modules/gensync/index.js:269:25)
+    at evaluateAsync (/Users/l.tereshchenkova/testguru/node_modules/gensync/index.js:291:5)
+    at /Users/l.tereshchenkova/testguru/node_modules/gensync/index.js:93:9
+    at new Promise (<anonymous>)
+    at async (/Users/l.tereshchenkova/testguru/node_modules/gensync/index.js:92:14)
+    at stopHiding - secret - don't use this - v1 (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/errors/rewrite-stack-trace.js:47:12)
+    at loadPartialConfigAsync (/Users/l.tereshchenkova/testguru/node_modules/@babel/core/lib/config/index.js:34:85)
+    at Object.<anonymous> (/Users/l.tereshchenkova/testguru/node_modules/babel-loader/lib/index.js:133:26)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/Users/l.tereshchenkova/testguru/node_modules/babel-loader/lib/index.js:3:103)
+    at _next (/Users/l.tereshchenkova/testguru/node_modules/babel-loader/lib/index.js:4:194)
+    at /Users/l.tereshchenkova/testguru/node_modules/babel-loader/lib/index.js:4:364
+    at new Promise (<anonymous>)
+    at Object.<anonymous> (/Users/l.tereshchenkova/testguru/node_modules/babel-loader/lib/index.js:4:97)
+    at Object._loader (/Users/l.tereshchenkova/testguru/node_modules/babel-loader/lib/index.js:231:18)
+    at Object.loader (/Users/l.tereshchenkova/testguru/node_modules/babel-loader/lib/index.js:48:18)
+    at Object.<anonymous> (/Users/l.tereshchenkova/testguru/node_modules/babel-loader/lib/index.js:44:12)
+
+  Rendered layout layouts/application.html.erb (Duration: 2237.0ms | Allocations: 13210)
+Completed 200 OK in 2249ms (Views: 2242.7ms | ActiveRecord: 0.0ms | Allocations: 17069)
+
+
+Started GET "/test-guru-screenshot.jpg" for 127.0.0.1 at 2025-05-29 12:27:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/test-guru-screenshot.jpg"):
+  
+Started GET "/about" for 127.0.0.1 at 2025-05-29 12:31:21 +0300
+Processing by ApplicationController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/about.html within layouts/application
+  Rendered application/about.html within layouts/application (Duration: 0.5ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3850)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 4930)
+
+
+Started GET "/author" for 127.0.0.1 at 2025-05-29 12:31:34 +0300
+Processing by ApplicationController#author as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering application/author.html within layouts/application
+  Rendered application/author.html within layouts/application (Duration: 0.9ms | Allocations: 95)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 3405)
+Completed 200 OK in 13ms (Views: 13.0ms | Allocations: 3913)
+
+
