@@ -1,0 +1,11 @@
+AllCops:
+  RubyInterpreters:
+    - ruby
+  Include:
+    - '**/*.rb'
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'bin/{rails,rake,bundle}'
+Style/Documentation:
+  Enabled: false
