@@ -14,10 +14,11 @@ ActiveRecord::Schema.define(version: 2025_09_10_091846) do
 
   create_table "answers", force: :cascade do |t|
     t.boolean "correct", default: false, null: false
-    t.integer "questions_id", null: false
+    t.string "body", null: false
+    t.integer "question_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["questions_id"], name: "index_answers_on_questions_id"
+    t.index ["question_id"], name: "index_answers_on_question_id"
   end
 
   create_table "categories", force: :cascade do |t|
@@ -57,13 +58,13 @@ ActiveRecord::Schema.define(version: 2025_09_10_091846) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "CreateUsers", null: false
+    t.string "name", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["CreateUsers"], name: "index_users_on_CreateUsers", unique: true
+    t.index ["name"], name: "index_users_on_name", unique: true
   end
 
-  add_foreign_key "answers", "questions", column: "questions_id"
+  add_foreign_key "answers", "questions"
   add_foreign_key "questions", "tests"
   add_foreign_key "tests", "categories"
   add_foreign_key "tests", "users", column: "author_id"
